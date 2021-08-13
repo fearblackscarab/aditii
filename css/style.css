@@ -1,0 +1,278 @@
+:root{
+    --primary: #3cc3b5;
+    --secondary:#2ea89b;
+    --decal:#43bc93;
+}
+/* general */
+*{box-sizing: border-box;}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.inner{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    display: inline-block;
+    color: var(--primary);
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* header */
+/* head1 */
+
+.head1 .inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin: 11px;
+    color: var(--primary);
+    font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.search-content{
+    position: relative;
+    width: 65%;
+    height: 35px;
+    margin-top: 18px;
+}
+
+.search{
+    height: 25px;
+    width: 100%;
+}
+
+.icon-search{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+.cart{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-cart{
+    margin-top: 15px;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.total{
+    margin-top: 20px;
+}
+
+/* end head1 */
+/* head2 */
+
+.head2{
+    margin: 0;
+    background-color: var(--secondary);
+}
+
+.top-list{
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav-top-item{
+    margin: 0;
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: .7vw;
+    padding: 0;
+    font-size: calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+    padding-right: .7vw;
+    border-right: 1px solid white;
+}
+
+.nav-top-item:last-child{
+    border-right: 0;
+}
+
+/* end head2 */
+/* end header */
+/* main */
+/* section1 */
+
+
+.section1{
+margin: 0;
+background-color: var(--primary);
+}
+
+.section1 .inner{
+    display: flex;
+}
+
+.s1-img{
+    margin: 0;
+    margin-top: 1vh;
+    margin-left: 10%;
+    margin-bottom: 1vh;
+}
+
+.s1-content{
+    margin: 0;
+    width: 40%;
+    margin-left: 10%;
+    color: white;
+}
+
+.cowhide-text{
+    text-align: justify;
+}
+
+.shop-now{
+    color: white;
+    background-color: var(--primary);
+    padding: 5px 15px;
+    border: 2px solid white;
+    border-radius: 10%;
+}
+
+.sliders{
+    display: flex;
+}
+
+.slider{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    margin-right: 15px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+/*end section1 */
+/* section2 */
+/* part-products */
+
+.part-products .inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sell{
+    display: flex;
+    width: calc(100%/3);
+    margin: 2vh 2vw;
+    border-right: 1px solid grey;
+}
+
+.sell:nth-child(3){
+    border: none;
+}
+
+.purchase-page{
+    margin-left: 5px;
+}
+
+/* end part-products */
+/* featured */
+
+.featured{
+    padding: 1px;
+    background-color: var(--primary);
+}
+
+.featured-text{
+    text-transform: uppercase;
+}
+
+/* end featured */
+/* products */
+
+.products .inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.featured-sell{
+    width: calc(100%/4);
+    margin: 2vh 1vw;
+    border: 1px solid black;
+    text-align: center;
+    border-bottom: 4px solid var(--primary);
+}
+
+.product-img{
+    margin: 1vh;
+}
+
+.purchase{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.shop{
+    background-color: var(--primary);
+    width: auto;
+    height: auto;
+    border: none;
+    color: white;
+    margin: 1vh;
+    padding: 6px 10px;
+    border-radius: 10%;
+}
+
+/* end products */
+/* footer */
+/* links */
+
+.lists{
+    background-color: var(--primary);
+    color: white;
+}
+
+.list{
+    list-style-type: none;
+}
+
+.lists .inner{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list-name{
+    text-transform: uppercase;
+    font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.list-item{
+    font-size: calc(12px + (22 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
+
+/* end links */
+/* colophon */
+
+.colophon{
+    background-color: var(--secondary);
+    text-align: center;
+    color: white;
+}
+
+.colophon-text{
+    margin: 0 auto;
+}
+/* end colophon */
+/* end footer */
