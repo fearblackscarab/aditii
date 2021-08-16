@@ -173,9 +173,16 @@ background-color: var(--primary);
 
 .sell{
     display: flex;
+    flex-wrap: wrap;
     width: calc(100%/3);
     margin: 2vh 2vw;
     border-right: 1px solid grey;
+}
+
+@media (max-width:876px){
+    .sell{
+        width: 250px;
+    }
 }
 
 .sell:nth-child(3){
@@ -213,6 +220,12 @@ background-color: var(--primary);
     border: 1px solid black;
     text-align: center;
     border-bottom: 4px solid var(--primary);
+}
+
+@media(max-width:876px){
+    .featured-sell{
+        width: 180px;
+    }
 }
 
 .product-img{
